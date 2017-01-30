@@ -29,3 +29,7 @@
 <br>
 
 <%= link_to 'New Product', new_product_path %>
+
+<% for i in 0..(ENV['TIMES'] ? ENV['TIMES'].to_i : 2) do %>
+    <p>Hello World #<%= i %>!</p>
+<% end %>
